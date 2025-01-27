@@ -2,9 +2,10 @@ package us.lsi.p3.ej_3;
 
 
 import java.util.List;
-import us.lsi.ag.RangeIntegerData;
+import us.lsi.ag.ValuesInRangeData;
+import us.lsi.ag.agchromosomes.ChromosomeFactory.ChromosomeType;
 
-public class InRangeAlumnosAG implements RangeIntegerData<SolucionAlumnos> {
+public class InRangeAlumnosAG implements ValuesInRangeData<Integer,SolucionAlumnos> {
 
 	public InRangeAlumnosAG(String fichero) {
 		DatosAlumnos.iniDatos(fichero);
@@ -53,5 +54,9 @@ public class InRangeAlumnosAG implements RangeIntegerData<SolucionAlumnos> {
 		return res;
 	}
 
+	@Override
+	public ChromosomeType type() {
+		return ChromosomeType.Range;
+	}
 
 }

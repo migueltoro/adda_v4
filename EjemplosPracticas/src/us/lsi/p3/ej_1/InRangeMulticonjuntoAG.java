@@ -2,10 +2,11 @@ package us.lsi.p3.ej_1;
 
 import java.util.List;
 
-import us.lsi.ag.RangeIntegerData;
+import us.lsi.ag.ValuesInRangeData;
+import us.lsi.ag.agchromosomes.ChromosomeFactory.ChromosomeType;
 
 
-public class InRangeMulticonjuntoAG implements RangeIntegerData<SolucionMulticonjunto> {
+public class InRangeMulticonjuntoAG implements ValuesInRangeData<Integer,SolucionMulticonjunto> {
 
 	public InRangeMulticonjuntoAG(String linea) {
 		DatosMulticonjunto.iniDatos(linea);
@@ -45,6 +46,11 @@ public class InRangeMulticonjuntoAG implements RangeIntegerData<SolucionMulticon
 		}
 		error += Math.abs(sum - DatosMulticonjunto.getSuma());
 		return -goal -10000*error;
+	}
+
+	@Override
+	public ChromosomeType type() {
+		return ChromosomeType.Range;
 	}
 
 }

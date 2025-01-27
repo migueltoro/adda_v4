@@ -3,9 +3,10 @@ package us.lsi.p3.ej_3;
 import java.util.List;
 
 import us.lsi.ag.AuxiliaryAg;
-import us.lsi.ag.PermutationData;
+import us.lsi.ag.SeqNormalData;
+import us.lsi.ag.agchromosomes.ChromosomeFactory.ChromosomeType;
 
-public class PermutationAlumnosAG implements PermutationData<SolucionAlumnos> {
+public class PermutationAlumnosAG implements SeqNormalData<SolucionAlumnos> {
 
 	public PermutationAlumnosAG(String fichero) {
 		DatosAlumnos.iniDatos(fichero);
@@ -37,6 +38,11 @@ public class PermutationAlumnosAG implements PermutationData<SolucionAlumnos> {
 	@Override
 	public Integer itemsNumber() {
 		return DatosAlumnos.getNumAlumnos();
+	}
+
+	@Override
+	public ChromosomeType type() {
+		return ChromosomeType.Permutation;
 	}
 
 }
