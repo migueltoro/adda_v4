@@ -1,0 +1,27 @@
+strict graph G {
+  1 [ color="green" label="Sevilla" ];
+  2 [ color="green" label="Cadiz" ];
+  3 [ color="blue" label="Huelva" ];
+  4 [ color="green" label="Cordoba" ];
+  5 [ color="green" label="Malaga" ];
+  6 [ color="blue" label="Antequera" ];
+  7 [ color="blue" label="Almeria" ];
+  8 [ color="green" label="Granada" ];
+  9 [ color="blue" label="Jaen" ];
+  10 [ color="blue" label="Algeciras" ];
+  2 -- 3 [ style="solid" label="150,20" ];
+  1 -- 3 [ style="solid" label="92,85" ];
+  1 -- 4 [ style="solid" label="140,54" ];
+  1 -- 2 [ style="solid" label="121,07" ];
+  1 -- 6 [ style="solid" label="159,95" ];
+  6 -- 8 [ style="solid" label="97,31" ];
+  6 -- 5 [ style="solid" label="51,52" ];
+  6 -- 4 [ style="solid" label="123,42" ];
+  5 -- 7 [ style="solid" label="201,03" ];
+  4 -- 9 [ style="solid" label="108,12" ];
+  4 -- 8 [ style="solid" label="207,84" ];
+  8 -- 7 [ style="solid" label="167,62" ];
+  8 -- 9 [ style="solid" label="93,16" ];
+  2 -- 10 [ style="solid" label="104,21" ];
+  10 -- 5 [ style="solid" label="138,00" ];
+}

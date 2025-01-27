@@ -1,0 +1,16 @@
+Me puedes calcular la complejiad teórica de este algoritmo con respecto al tamaño n? 
+Cual es el orden de complejidad del número de subproblemas distintos hay que resolver en el caso peor?
+Cual es el orden de complejidad del algoritmo con memoria?
+
+double f (int n, double a) { 
+	double r; 
+	if (n == 1) { 
+		r = a; 
+	} else { 
+		r = f (n/2, a+1) – f (n/2, a–1); 
+		for (int i = 1; i <= n; i++) { 
+			r += a * i; 
+		} 
+	} 
+	return r; 
+}

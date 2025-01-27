@@ -1,0 +1,18 @@
+head section
+
+Integer getN()
+Integer ganancia(Integer i)
+Boolean solape(Integer i, Integer j)
+Integer n = getN()
+
+goal section
+
+max sum(ganancia(i) x[i], i in 0 .. n)
+
+constraints section
+
+x[i] + x[j] <= 1, i in 0 .. n, j in 0 .. n | j> i && solape(i,j)
+
+bin
+
+x[i], i in 0 .. n

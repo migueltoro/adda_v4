@@ -1,0 +1,8 @@
+0,vaciar J1,Vacía completamente el contenido de J1 al suelo
+1,volcar J1 en J2,Vuelca el contenido de la jarra J1 en la J2. Si ésta se llena el agua restante de la J1 cae al suelo y desaparece. J1 siempre queda vacía.
+2,echar J1 en J2,Echa el contenido de la jarra J1 en la J2. Si ésta se llena el agua restante de la J1 se conserva en dicha jarra (no cae al suelo).
+3,llenar J1,Llena completamente la jarra J1 desde el grifo.
+4,llenar J2,Llena completamente la jarra J2 desde el grifo.
+5,vaciar J2,Vacía completamente el contenido de J2 al suelo.
+6,volcar J2 en J1,Vuelca el contenido de la jarra J2 en la J1. Si ésta se llena el agua restante de la J2 cae al suelo y desaparece. J2 siempre queda vacía.
+7,echar J2 en J1,Echa el contenido de la jarra J2 en la J1. Si ésta se llena el agua restante de la J2 se conserva en dicha jarra (no cae al suelo).

@@ -1,0 +1,23 @@
+head section
+
+Integer n = 3
+
+goal section
+
+max  x[0] + x[1] + x[2]
+
+constraints section
+
+(x[i], i in 1 .. 3 ==  2 x[0] + 1, sum(x[i], i in 0 .. 2))
+allDifferentInValues(x[i], i in 0 .. n ; 0, 2, 3)
+x[0] = ABS (sum(-1 x[i], i in 0 .. 2) + 4)
+
+bounds section
+
+x[i] <= 100, i in 0 .. n
+
+
+int  
+
+x[i], i in 0 .. n
+

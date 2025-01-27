@@ -1,0 +1,4 @@
+Dada una cadena de caracteres, se pide implementar una función en Java que devuelva 
+True si la cadena es un palídromo y False en caso contrario.  
+
+Dar una solución iterativa, otra recursiva y otra funcional usando stream.

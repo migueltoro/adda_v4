@@ -1,0 +1,14 @@
+PI5Ej5DatosEntrada1.txt:
+ - Al menos una ciudad intermedia con mas de 100000 habitantes
+ - Al menos una carretera con mas de 100 kms
+ - Origen: Cadiz; Destino: Granada
+ 
+ PI5Ej5DatosEntrada2.txt:
+ - Al menos una ciudad intermedia con máximo 200000 habitantes
+ - Al menos una carretera con al menos 120 kms
+ - Origen: Toledo; Destino: Guadalajara
+ 
+ PI5Ej5DatosEntrada3.txt:
+ - Al menos una ciudad intermedia con mas de 25000 habitantes
+ - Al menos una carretera con menos de 200 kms
+ - Origen: C01; Destino: C25

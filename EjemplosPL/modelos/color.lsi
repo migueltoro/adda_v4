@@ -1,0 +1,23 @@
+head section
+
+Integer getN()
+Integer getM()
+Boolean containsEdge(Integer i, Integer j)
+Integer n = getN()
+Integer m = getM()
+
+goal section
+
+min sum(y[k], k in 0 .. m)
+
+constraints section
+
+sum(x[i,k], k in 0 .. m) = 1, i in 0 .. n
+x[i,k] - y[k] <= 0, i in 0 .. n, k in 0 ..m
+x[i,k] + x[j,k] <= 1, i in 0 ..n, j in 0 .. n, k in 0 .. m | containsEdge(i,j)
+
+bin
+
+x[i,k], i in 0 .. n, k in 0 ..m
+y[k], k in 0 .. m
+

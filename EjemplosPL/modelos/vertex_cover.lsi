@@ -1,0 +1,18 @@
+head section
+
+Integer getN()
+Double vertexWeight(Integer i)
+Boolean containsEdge(Integer i, Integer j)
+Integer n = getN()
+
+goal section
+
+min sum(vertexWeight(i) x[i], i in 0 .. n)
+
+constraints section
+
+x[i] + x[j] >=1, i in 0 .. n, j in 0 .. n | j > i && containsEdge(i,j)
+
+bin
+
+x[i], i in 0 .. n

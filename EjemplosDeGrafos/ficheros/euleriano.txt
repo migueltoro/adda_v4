@@ -1,0 +1,16 @@
+#VERTEX#
+a
+b
+c
+d
+e
+f
+#EDGE#
+a,b,1
+a,f,2
+b,f,3
+b,d,4
+f,e,5
+f,d,6
+f,c,7
+c,d,8

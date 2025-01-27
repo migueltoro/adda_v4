@@ -1,0 +1,23 @@
+T_prod = 500
+T_manual = 500
+// COMPONENTES
+C01: prod=1; elab=2;
+C02: prod=3; elab=4;
+C03: prod=5; elab=6;
+C04: prod=6; elab=5;
+C05: prod=4; elab=3;
+C06: prod=2; elab=1;
+C07: prod=1; elab=1;
+C08: prod=2; elab=2;
+C09: prod=2; elab=4;
+C10: prod=3; elab=5;
+// PRODUCTOS
+P01 -> precio=20; comp=(C01:5),(C02:4),(C03:3); max_u=10
+P02 -> precio=10; comp=(C04:2),(C05:1); max_u=20
+P03 -> precio=80; comp=(C06:10),(C07:6); max_u=30
+P04 -> precio=30; comp=(C08:5),(C09:2); max_u=40
+P05 -> precio=50; comp=(C01:7),(C02:2),(C03:1),(C04:4),(C05:1); max_u=50
+P06 -> precio=60; comp=(C06:6),(C07:3),(C08:1),(C09:2),(C02:1); max_u=40
+P07 -> precio=70; comp=(C01:5),(C02:1),(C05:2),(C06:1); max_u=30
+P08 -> precio=40; comp=(C04:4),(C07:4),(C08:2),(C09:1); max_u=20
+P09 -> precio=90; comp=(C01:20),(C06:10),(C07:5); max_u=10

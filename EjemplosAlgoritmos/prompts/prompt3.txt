@@ -1,0 +1,21 @@
+Asumimos que tenemos n productos, las caracteriticas de cada uno de ellos, 
+peso unitario, precio unitario, y la cantidad maxima de unidades disponibles de cada uno de ellos.
+Además sabemos la capacidad maxima de peso que puede soportar una mochila. 
+
+Puedes diseñar un algoritmo que nos permita determinar cuantas unidades de cada producto 
+debemos llevar para conseguir que el valor contenido en la mochila sea el máximo posible?
+
+Queremos  generalizar el problema a un conjunto de ellos cada uno de los cuales tiene las 
+propiedades (i, r) que que indican que ya hemos introducido en la mochila en las cantidades 
+adecuadas los productos desde 0 hasta i-1 y r la capacidad restante de la mochila. Con estas ideas 
+queremos plantear un grafo virtual cuyos vértices son los problemas y sobre este grafo encontrar 
+el camino mínimo usando un algoritmo de programación dinámica con filtro pero en una versión recursiva. Es posible?
+
+Cual es la mejor heurística para este problema?
+
+Podríamos usar un filtro basado en al heurísitica anterior?
+
+Sería conveniente ordenar los productos por alguna característica? 
+Sería conveniente ordenar los vecinos a visitar según su valor por cuestiones de eficiencia?
+
+Que solución será mejor la basada en un algoritmo A*, la basada en bactracking o la basada en programación dinámica?

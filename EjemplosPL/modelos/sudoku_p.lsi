@@ -1,0 +1,21 @@
+head section
+
+Integer n = 9
+Boolean fi(Integer f, Integer c, Integer t)
+
+goal section
+
+min  1
+
+constraints section
+
+sum(x[i,j,v], i in 0 .. n) = 1, j in 0 .. n, v in 1 .. n+1
+sum(x[i,j,v], j in 0 .. n) = 1, i in 0 .. n, v in 1 .. n+1
+sum(x[i,j,v], v in 1 .. n+1) = 1, i in 0 .. n, j in 0 .. n
+sum(x[i,j,v], i in 0 .. n, j in 0 .. n | fi(i,j,t)) = 1, t in 0 .. n, v in 1 .. n+1
+
+{datos}
+
+bin
+
+x[i,j,v], i in 0 .. n, j in 0 .. n, v in 1 .. n+1

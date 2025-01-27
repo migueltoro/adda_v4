@@ -1,0 +1,15 @@
+Asumimos que tenemos un tablero de ajedrez de 8x8, y que las casillas estan etiquetadas (f,c) siendo
+f la fila y c la columna. La casilla (0,0) es la esquina superior izquierda y la casilla (7,7)
+la esquina inferior derecha. Suponiendo que tenemos un caballo en la casilla (0,0)
+que se puede mover por el tablero tal como se mueve un caballo en el ajedrez.
+
+Queremos saber si es posible que el caballo recorra todo el tablero sin pasar por
+ninguna casilla dos veces.
+
+Viendo las ideas anteriores como un grafo cuyos vértices son las posiciones del tablero,
+las aristas son los movimientos del caballo. 
+El problema se reduce a encontrar un camino simple y abierto en el grafo que incluya todos los vértices.
+
+Para resolver el problema se puede aplicar algoritmos de org.jgrapht para resolver el problema?.
+
+

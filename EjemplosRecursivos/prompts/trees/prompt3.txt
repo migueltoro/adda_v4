@@ -1,0 +1,21 @@
+Definimos un árbol n-ario en las clases en las clases us.lsi.tiposrecursivos.Tree,
+us.lsi.tiposrecursivos.TEmpty, us.lsi.tiposrecursivos.TLeaf y us.lsi.tiposrecursivos.TNary que deben ser reutilizadas
+e importadas.
+
+Para este algoritmo, queremos utilizar una "switch expression with record pattern matching" para soportar 
+cada uno de los diferentes tipos de árboles binarios (BEmpty, BLeaf, BTree) de esta manera:
+
+        return switch (tree) {
+            case TEmpty() -> ...;
+            case TLeaf(var label) -> ...;
+            case TNary(var label, var children) -> ...;
+        };
+
+Diseñe una funcion que dado un árbol n-ario Tree<E> y un predicado sobre E
+devuelva una lista List<Boolean> de forma que el elemento i-ésimo de la lista será True
+si todas las etiquetas (label) de los árboles de nivel i cumplen el predicado.
+
+Generalice el algoritmo anterior para que tome como parámetros un árbol n-ario Tree<E>, 
+un entero n que represente el nivel del arbol actual y
+una lista List<Boolean> de forma que el elemento i-ésimo de la lista será True
+si todas las etiquetas (label) de los árboles de nivel i encontradas hasta el momento cumplen el predicado.

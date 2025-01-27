@@ -1,0 +1,22 @@
+Me puedes dar una solución imperativa que no use stream y otra recursiva equivalentes al código funcional siguiente:
+
+public static Map<Cuadrante,Double> solucionFuncional(List<Punto2D> ls) {
+
+	return ls.stream().collect(Collectors.groupingBy(Punto2D::cuadrante, 
+					Collectors.reducing(0., x -> x.x(), (x, y) -> x + y)));
+
+}
+
+Estando el tipo Punto2D definido como:
+
+public record Punto2D(Double x,Double y) {
+
+        public enum Cuadrante {PRIMER_CUADRANTE,SEGUNDO_CUADRANTE,TERCER_CUADRANTE,CUARTO_CUADRANTE};
+     
+        public Cuadrante cuadrante() {
+            return x >= 0 && y >= 0 ? Cuadrante.PRIMER_CUADRANTE :
+                x < 0 && y >= 0 ? Cuadrante.SEGUNDO_CUADRANTE :
+                x < 0 && y < 0 ? Cuadrante.TERCER_CUADRANTE : Cuadrante.CUARTO_CUADRANTE;
+        }
+        
+    }

@@ -1,0 +1,15 @@
+strict digraph G {
+  1 [ label="sqrt" ];
+  2 [ label="toDouble" ];
+  3 [ label="*" ];
+  4 [ label="+" ];
+  5 [ label="34" ];
+  6 [ label="a" ];
+  7 [ label="b" ];
+  1 -> 2 [ ];
+  2 -> 3 [ ];
+  3 -> 4 [ ];
+  3 -> 5 [ ];
+  4 -> 6 [ ];
+  4 -> 7 [ ];
+}

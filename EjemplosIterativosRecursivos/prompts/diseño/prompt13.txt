@@ -1,0 +1,2 @@
+Dados los enteros n, b tal que n >=0, b> 0, escribe una función iterativa y otra recursiva que tome n, b 
+como parámetros y devuelva una lista con los digitos de n en la base b.

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Tree.g4</title>
+<style type="text/css">
+body { 
+  color: #000;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin: 20px 5px 10px 20px;
+}
+/* resets */
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  border: 0;
+}
+.clear {
+  clear: both;
+}
+.container {
+  position: relative;
+}
+/* Grammar name */
+h1 {
+  font-size: 20px;
+}
+/*Grammar documentation*/
+.gdoc {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+#index {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  overflow: auto;
+}
+#index h2 {
+  margin: 0;
+}
+#index ol {
+  padding-left: 30px;
+  list-style-type: square;
+  color: #364559;
+}
+#index ol li {
+  margin: 2px 0;
+}
+#index ol li a {
+  color: #366199;
+  font-family: monospace;
+}
+#rules {
+  margin-left: 210px;
+  padding-left: 20px;
+  border-left: 1px solid #AAA;
+}
+.rule {
+  margin-bottom: 30px;
+}
+/* Rule name*/
+.rule h3 {
+  color: #364559;
+  background-color: #DADFE6;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 4px 5px;
+  border-bottom: 1px solid #828B99;
+}
+.rule h3 a.topLink {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: #000;
+  margin-left: 20px;
+}
+.rule h3, .rule .ebnf div {
+  font-family: monospace;
+}
+/* Sections: ebnf, railroad*/
+.doc, .ebnf, .railroad {
+  padding-left: 20px;
+}
+.doc h4, .ebnf h4, .railroad h4 {
+  font-size: 12px;
+  margin: 15px 0 10px -20px;
+}
+.ebnf div {
+  background-color: #F7F7F7;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  padding: 10px 5px;
+}
+.ebnf div .literal {
+  color: #0000FF;
+}
+.ebnf div .keyword {
+  color: #7F0055;
+  font-weight: bold;
+}
+.ebnf div .rule {
+  color: #004084;
+  font-weight: bold;
+}
+.ebnf div .token {
+  font-style:italic;
+}
+.railroad img {
+  display: block;
+}
+footer {
+  float: right;
+}
+</style>
+</head>
+<body>
+<h1><a href="Tree.g4.html" name="top">Tree</a></h1>
+<p class="gdoc"></p>
+<div class="container">
+<div id="index">
+<h2>Rules</h2>
+<ol>
+  <li><a href="#nary_tree">nary_tree</a></li>
+  <li><a href="#label">label</a></li>
+  <li><a href="#PARENTESIS_C">PARENTESIS_C</a></li>
+  <li><a href="#PARENTESIS_A">PARENTESIS_A</a></li>
+  <li><a href="#COMA">COMA</a></li>
+  <li><a href="#EMPTY">EMPTY</a></li>
+  <li><a href="#ID">ID</a></li>
+  <li><a href="#WS">WS</a></li>
+</ol>
+</div>
+
+<div id="rules">
+<ul>
+  <li class="rule" id="nary_tree">
+  <h3>nary_tree <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">nary_tree</span> :  <a href="#EMPTY" class="token">EMPTY</a> <span class="operator">#</span><a href="#emptyTree" class="rule">emptyTree</a> <span class="operator">|</span> <a href="#label" class="rule">label</a> <span class="operator">#</span><a href="#labelTree" class="rule">labelTree</a> <span class="operator">|</span> <a href="#treeLabel" class="rule">treeLabel</a><span class="operator">=</span><a href="#label" class="rule">label</a> <span class="literal">'('</span> <a href="#nary_tree" class="rule">nary_tree</a> <span class="operator">(</span><span class="literal">','</span> <a href="#nary_tree" class="rule">nary_tree</a><span class="operator">)</span><span class="operator">*</span> <span class="literal">')'</span> <span class="operator">#</span><a href="#naryTree" class="rule">naryTree</a> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/nary_tree.png" />
+  </div>
+  </li>
+  <li class="rule" id="label">
+  <h3>label <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">label</span> :  <a href="#ID" class="token">ID</a> <span class="operator">#</span><a href="#idLabel" class="rule">idLabel</a> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/label.png" />
+  </div>
+  </li>
+  <li class="rule" id="PARENTESIS_C">
+  <h3>PARENTESIS_C <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">PARENTESIS_C</span> :  <span class="literal">'/('</span> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/PARENTESIS_C.png" />
+  </div>
+  </li>
+  <li class="rule" id="PARENTESIS_A">
+  <h3>PARENTESIS_A <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">PARENTESIS_A</span> :  <span class="literal">'/)'</span> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/PARENTESIS_A.png" />
+  </div>
+  </li>
+  <li class="rule" id="COMA">
+  <h3>COMA <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">COMA</span> :  <span class="literal">'/,'</span> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/COMA.png" />
+  </div>
+  </li>
+  <li class="rule" id="EMPTY">
+  <h3>EMPTY <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">EMPTY</span> :  <span class="literal">'/_,'</span> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/EMPTY.png" />
+  </div>
+  </li>
+  <li class="rule" id="ID">
+  <h3>ID <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">ID</span> :  <span class="operator">(</span><a href="#PARENTESIS_C" class="token">PARENTESIS_C</a> <span class="operator">|</span> <a href="#PARENTESIS_A" class="token">PARENTESIS_A</a> <span class="operator">|</span> <a href="#COMA" class="token">COMA</a> <span class="operator">|</span> <span class="literal">'a'</span><span class="operator">..</span><span class="literal">'z'</span> <span class="operator">|</span> <span class="literal">'A'</span><span class="operator">..</span><span class="literal">'Z'</span> <span class="operator">|</span> <span class="literal">'0'</span><span class="operator">..</span><span class="literal">'9'</span> <span class="operator">|</span> <span class="literal">'_'</span> <span class="operator">|</span> <span class="literal">'['</span> <span class="operator">|</span> <span class="literal">']'</span> <span class="operator">|</span> <span class="literal">';'</span> <span class="operator">|</span> <span class="literal">'.'</span> <span class="operator">|</span> <span class="literal">'+'</span> <span class="operator">|</span> <span class="literal">'-'</span><span class="operator">)</span><span class="operator">+</span> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/ID.png" />
+  </div>
+  </li>
+  <li class="rule" id="WS">
+  <h3>WS <a class="topLink" title="Go to top" href="Tree.g4.html">Top</a></h3>
+  <div class="doc">
+    <p>
+    </p>
+  </div>
+  <div class="ebnf">
+  <h4>Text notation:</h4>
+  <div>
+    <span class="rule">WS</span> :  [<span class="literal"> \t\r\n</span>]<span class="operator">+</span> <span class="operator">-></span> <a href="#skip" class="rule">skip</a> ;
+  </div>
+  </div>
+  <div class="railroad">
+  <h4>Visual notation:</h4>
+  <img border="0" src="images/WS.png" />
+  </div>
+  </li>
+</ul>
+</div>
+</div>
+<footer>Generated by: <a href="https://github.com/jknack/antlr4ide">ANTLR 4 IDE</a>. Copyright (c) 2013 <a href="https://twitter.com/edgarespina">Edgar Espina</a></footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+strict digraph G {
+  1 [ label="(0,400)" ];
+}

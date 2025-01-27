@@ -1,0 +1,13 @@
+#VERTEX#
+Toledo,687084
+CiudadReal,495761
+Albacete,388167
+Cuenca,197222 
+Guadalajara,257762
+#EDGE#
+Toledo,CiudadReal,N-401,121.750
+Toledo,Cuenca,N-403,182.500
+CiudadReal,Albacete,CM-4127,198.111
+CiudadReal,Cuenca,CM-4127,267.342
+Albacete,Cuenca,N-301,161.784
+Cuenca,Guadalajara,N-320,135.213

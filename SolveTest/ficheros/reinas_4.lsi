@@ -1,0 +1,21 @@
+head section
+
+Integer n = 10
+
+goal section
+
+min x[0]
+
+constraints section
+
+permutation(x[i], i in 0 .. n; k, k in 0 .. n)
+permutation(x[i]-i, i in 0 .. n; k, k in -n+1 .. n)
+permutation(x[i]+i, i in 0 .. n; k, k in 0 .. 2*n-1)
+
+bounds section
+
+x[i] < n, i in 0 .. n
+
+int  
+
+x[i], i in 0 .. n

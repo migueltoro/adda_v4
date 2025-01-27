@@ -1,0 +1,50 @@
+head section
+
+Integer n = 9
+Boolean fi(Integer f, Integer c, Integer t)
+
+goal section
+
+min  1
+
+constraints section
+
+sum(x[i,j,v], i in 0 .. n) = 1, j in 0 .. n, v in 1 .. n+1
+sum(x[i,j,v], j in 0 .. n) = 1, i in 0 .. n, v in 1 .. n+1
+sum(x[i,j,v], v in 1 .. n+1) = 1, i in 0 .. n, j in 0 .. n
+sum(x[i,j,v], i in 0 .. n, j in 0 .. n | fi(i,j,t)) = 1, t in 0 .. n, v in 1 .. n+1
+
+x[0,1,6] = 1
+x[0,2,3] = 1
+x[0,4,8] = 1
+x[0,6,4] = 1
+x[1,1,9] = 1
+x[1,5,4] = 1
+x[1,8,7] = 1
+x[2,0,4] = 1
+x[2,4,2] = 1
+x[3,2,7] = 1
+x[3,3,2] = 1
+x[3,5,3] = 1
+x[3,7,5] = 1
+x[3,8,8] = 1
+x[4,1,5] = 1
+x[4,4,4] = 1
+x[5,2,8] = 1
+x[5,6,2] = 1
+x[5,8,4] = 1
+x[6,0,6] = 1
+x[6,6,7] = 1
+x[7,2,5] = 1
+x[7,4,3] = 1
+x[7,5,6] = 1
+x[8,1,3] = 1
+x[8,3,8] = 1
+x[8,3,8] = 1
+x[8,4,7] = 1
+x[8,7,2] = 1
+x[8,8,6] = 1
+
+bin
+
+x[i,j,v], i in 0 .. n, j in 0 .. n, v in 1 .. n+1

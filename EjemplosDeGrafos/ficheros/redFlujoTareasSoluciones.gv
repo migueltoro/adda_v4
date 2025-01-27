@@ -1,0 +1,17 @@
+strict digraph G {
+  1 [ label="p0=1.0" color="red" ];
+  2 [ label="p1=1.0" color="red" ];
+  3 [ label="p2=1.0" color="red" ];
+  4 [ label="p3=1.0" color="red" ];
+  5 [ label="p4=1.0" color="red" ];
+  6 [ label="t0=1.0" color="red" ];
+  7 [ label="t1=1.0" color="red" ];
+  8 [ label="t2=1.0" color="red" ];
+  9 [ label="t3=1.0" color="red" ];
+  10 [ label="t4=1.0" color="red" ];
+  1 -> 8 [ label="=1.0" color="red" ];
+  4 -> 10 [ label="=1.0" color="red" ];
+  5 -> 6 [ label="=1.0" color="red" ];
+  2 -> 7 [ label="=1.0" color="red" ];
+  3 -> 9 [ label="=1.0" color="red" ];
+}

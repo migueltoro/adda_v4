@@ -1,0 +1,23 @@
+Declaraciones
+
+r : Int = 3
+a : Int = 1 
+b : Int = 2
+c : Double = 20.
+d : String = "Antonio"
+e : Boolean = true
+min ( a : Double , b : Double ) : Double
+abs (a :Double) : Double
+sqrt (a: Double) : Double
+
+Codigo  { 
+ if ( a >= b ) { 
+	  r = a + b + abs(2 - c)
+  } else {
+	  r = a - b - sqrt(23.)
+	  r = min(a+b,c-a,2*b)
+  }
+ while(c>0){
+ 	  c = c-1
+ }
+}

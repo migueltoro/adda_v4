@@ -1,0 +1,29 @@
+head section
+
+Integer getN()
+Double getEdgeWeight(Integer i, Integer j)
+Boolean containsEdge(Integer i, Integer j)
+Integer n = getN()
+
+goal section
+
+min sum(getEdgeWeight(i,j) x[i,j], i in 0 .. n, j in 0 .. n | j != i && containsEdge(i,j))
+
+constraints section
+
+sum(x[i,j], i in 0 .. n | j != i && containsEdge(i,j)) = 1, j in 0 .. n
+sum(x[i,j], j in 0 .. n | j != i && containsEdge(i,j)) = 1, i in 0 .. n
+x[i,j] = 1 -> y[j] - y[i] >= 1, i in 0 .. n, j in 1 .. n | j != i && containsEdge(i,j)
+y[0] = 0
+
+bounds section
+
+y[i] <= n-1, i in 0 .. n
+
+bin
+
+x[i,j], i in 0 .. n, j in 0 .. n | j != i && containsEdge(i,j)
+
+int  
+
+y[i], i in 0 .. n

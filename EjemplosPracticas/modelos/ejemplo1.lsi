@@ -1,0 +1,25 @@
+head section
+
+Integer getNumElementos()
+Integer getSuma()
+Integer getElemento(Integer i)
+Integer getMultiplicidad(Integer i)
+
+Integer n = getSuma()
+Integer m = getNumElementos()
+
+goal section
+
+min sum(x[i], i in 0 .. m)
+
+constraints section
+
+sum(getElemento(i) x[i], i in 0 .. m) = n
+
+bounds section
+
+x[i] <= getMultiplicidad(i), i in 0 .. m
+
+int  
+
+x[i], i in 0 .. m

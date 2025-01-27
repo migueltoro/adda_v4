@@ -1,0 +1,2 @@
+Dados los enteros a, b tal que a >=0, b> 0, escribe una función iterativa y otra recursica que tome a, b 
+como parámetros y devuelva el cociente y resto de a entre b sin usar el operador de división.

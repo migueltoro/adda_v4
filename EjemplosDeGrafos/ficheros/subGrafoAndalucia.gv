@@ -1,0 +1,8 @@
+strict graph G {
+  3 [ label="Huelva" ];
+  1 [ label="Sevilla" ];
+  7 [ label="Almeria" ];
+  2 [ label="Cadiz" ];
+  1 -- 2 [ label="121,07" ];
+  1 -- 3 [ label="92,85" ];
+}

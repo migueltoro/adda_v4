@@ -1,0 +1,7 @@
+// INVESTIGADORES
+INV1: capacidad=6; especialidad=0;
+INV2: capacidad=3; especialidad=1;
+INV3: capacidad=8; especialidad=2;
+// TRABAJOS
+T01 -> calidad=5; diasNecesarios=(0:6),(1:0),(2:0);
+T02 -> calidad=10; diasNecesarios=(0:0),(1:3),(2:8);

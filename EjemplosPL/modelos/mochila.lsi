@@ -1,0 +1,32 @@
+head section
+
+
+Integer getCI()
+Integer getN()
+Integer getValor(Integer i)
+Integer getPeso(Integer i)
+Integer getNMU(Integer i)
+Integer CI = getCI()
+Integer n = getN()
+
+
+goal section
+
+/*
+Comentarios
+*/
+
+max  sum(getValor(i) x[i], i in 0 .. n) //mas comentarios
+
+constraints section
+
+sum(getPeso(i) x[i], i in 0 .. n) <= CI
+
+bounds section
+
+x[i] <= getNMU(i), i in 0 .. n
+
+int  
+
+x[i], i in 0 .. n 
+

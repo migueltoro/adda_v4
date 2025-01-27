@@ -1,0 +1,24 @@
+head section
+
+Integer n = 10
+
+goal section
+
+min  sum(x[i], i in 0 .. n)
+
+constraints section
+
+allDifferent(x[i], i in 0 .. n)
+allDifferent(x[i] + i, i in 0 .. n)
+allDifferent(x[i] - i, i in 0 .. n)
+
+bounds section
+
+x[i] <= n - 1, i in 0 .. n
+
+
+int  
+
+x[i], i in 0 .. n 
+
+

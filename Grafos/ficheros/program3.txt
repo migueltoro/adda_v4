@@ -1,0 +1,25 @@
+Program (r : Double, a : Int) {
+
+b : Int = r
+c : Double = a
+d : String = "Antonio"
+e : Boolean = true
+min (a : Double , b : Double ) : Double {
+	d : Int = 0
+	return a <= b ? a : b
+}
+abs (a : Int) : Int {
+	return a < 0 ? - a : a
+}
+
+ if ( a >= b ) { 
+	  r = a + b + abs(2 - c)
+  } else {
+	  r = a - b - sqrt(23.)
+	  r = min(a+b,c-a,2*b)
+  }
+ while(c>0){
+ 	  c = c-1
+ }
+
+}

@@ -1,0 +1,17 @@
+Cadiz,Huelva,Mar,150.2
+Sevilla,Huelva,A-49,92.850
+Sevilla,Cordoba,A-4,140.543
+Sevilla,Cadiz,AP-4,121.066
+Sevilla,Antequera,A-92,159.947
+Antequera,Granada,A-92,97.306
+Antequera,Malaga,A-45,51.523
+Antequera,Cordoba,A-45,123.415
+Malaga,Almeria,A-7,201.029
+Cordoba,Jaen,A-316,108.120
+Cordoba,Granada,N-432,207.838
+Granada,Almeria,A-92,167.624
+Granada,Jaen,A-44,93.161
+Cadiz,Algeciras,A-381,104.211
+Algeciras,Malaga,A-7,138.852
+Londres,Paris,E-7,538.852
+Paris,Roma,E-8,438.852

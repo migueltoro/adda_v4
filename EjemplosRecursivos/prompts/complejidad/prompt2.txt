@@ -1,0 +1,17 @@
+Me puedes calcular la complejiad teórica, con y sin memoria, de este algoritmo con respecto al tamaño n?
+
+int f (int n) {
+ 	int i, j, z, r;
+	if (n < 1) {
+ 		r = 1;
+      	} else {
+ 		z = 0;
+ 		for (i = 1; i < n; i++) {
+ 			for (j = 1; j < i ∗ i; j++) {
+ 				z ++;
+ 			}
+ 		}
+ 		r = z ∗ (( f (n – 2)) ^ 2);
+ 	}
+ 	return r;
+}

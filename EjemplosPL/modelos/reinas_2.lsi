@@ -1,0 +1,24 @@
+head section
+
+Integer n = 20
+
+goal section
+
+min  x[0]
+
+constraints section
+
+permutation(x[i], i in 0 .. n ; j, j in 0 .. n)
+allDifferent(x[i] + i, i in 0 .. n)
+allDifferent(x[i] - i, i in 0 .. n)
+
+bounds section
+
+x[i] < n, i in 0 .. n
+
+int  
+
+x[i], i in 0 .. n 
+
+
+

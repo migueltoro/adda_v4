@@ -1,0 +1,7 @@
+#VERTEX#
+s,Source,0.,6.,0.
+o,Intermediate
+t,Sink,0.,5.,1.
+#EDGE#
+s,o,0.,3.,0.
+o,t,0.,3.,0.

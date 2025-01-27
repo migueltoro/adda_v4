@@ -1,0 +1,1 @@
+Escribe una función que tome un stream de tipo E comparable y nos devuelva si está ordenado.

@@ -1,0 +1,18 @@
+head section
+
+Integer n = 100
+
+goal section
+
+min  x[0,0]
+
+constraints section
+
+sum(x[i,j], i in 0 .. n) = 1, j in 0 .. n
+sum(x[i,j], j in 0 .. n) = 1, i in 0 .. n
+sum(x[i,j], i in 0 .. n, j in 0 .. n | j-i = k) <= 1, k in -n+1 .. n
+sum(x[i,j], i in 0 .. n, j in 0 .. n  | j+i = k) <= 1, k in 0 .. 2*n-1
+
+bin  
+
+x[i,j], i in 0 .. n, j in 0 .. n

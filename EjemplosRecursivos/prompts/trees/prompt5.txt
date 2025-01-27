@@ -1,0 +1,27 @@
+Definimos un árbol n-ario en las clases en las clases us.lsi.tiposrecursivos.Tree,
+us.lsi.tiposrecursivos.TEmpty, us.lsi.tiposrecursivos.TLeaf y us.lsi.tiposrecursivos.TNary que deben ser reutilizadas
+e importadas.
+
+Para este algoritmo, queremos utilizar una "switch expression with record pattern matching" para soportar 
+cada uno de los diferentes tipos de árboles n-arios (TEmpty, TLeaf, TNary) de esta manera:
+
+        return switch (tree) {
+            case TEmpty() -> ...;
+            case TLeaf(var label) -> ...;
+            case TNary(var label, var children) -> ...;
+        };
+
+Diseñe un algoritmo recursivo que, dado un árbol n-ario de enteros de tipo Tree<Integer>, 
+determine la lista con las etiquetas del camino del árbol desde la raíz a una hoja no vacía 
+tal que no contenga ningún elemento que verifique el predicado p y que la suma de sus etiquetas sea mínima. 
+En caso de que no exista ningún camino que cumpla la condición, el algoritmo debe devolver null.
+
+Diseñe una función para su uso posterior que devuelva la suma de una lista de enteros.
+Diseñe la función update_list que toma dos listas de enteros y actualiza la primera con la segunda si la 
+suma de los elementos de la segunda es menor que la suma de la primera.
+
+Generalicemos a una función recursiva que devuelva void y que tome como parámetros adicionales 
+una lista de enteros con las etiquetas de los nodos desde la raíz hasta el vértice, 
+y otra lista con la lista de suma mínima encontrada hasta el momento.
+Si en una hoja cuya etiqueta cumpla el predicado se encuentra una lista de suma mínima, 
+se debe actualizar la lista de suma mínima y la suma de la misma.

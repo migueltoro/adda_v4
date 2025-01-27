@@ -1,0 +1,22 @@
+head section
+
+Integer n = 3
+
+goal section
+
+max  x[0] + x[1] + x[2]
+
+constraints section
+
+x[2] = PWL ( x[1] ) : (0,0) (2,4) (5,10)
+x[1] = 10
+
+bounds section
+
+x[i] <= 100, i in 0 .. n
+
+
+int  
+
+x[i], i in 0 .. n-1
+

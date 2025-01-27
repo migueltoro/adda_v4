@@ -1,0 +1,22 @@
+head section
+
+Integer getN()
+Integer getM()
+Integer beneficio(Integer i)
+Integer coste(Integer j)
+Boolean necesita(Integer i, Integer j)
+Integer n = getN()
+Integer m = getM()
+
+goal section
+
+max sum(beneficio(i) x[i], i in 0 .. n) - sum(coste(j) y[j], j in 0 .. m)
+
+constraints section
+
+x[i] - y[j] <= 0, i in 0 .. n, j in 0 .. m | necesita(i,j)
+
+bin
+
+x[i], i in 0 .. n
+y[j], j in 0 .. m

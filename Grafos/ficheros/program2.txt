@@ -1,0 +1,11 @@
+{ 
+ if ( a >= b ) { 
+	  r = a + b
+  } else {
+	  r = a - b
+	  r = r+1
+  }
+ while(c>0){
+ 	  c = c-1
+ }
+}

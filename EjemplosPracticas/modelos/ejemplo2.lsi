@@ -1,0 +1,17 @@
+head section
+Integer getNumSubconjuntos()
+Integer getNumElementos()
+Double getPeso(Integer i)
+Integer contieneElemento(Integer i, Integer j)
+
+Integer n = getNumSubconjuntos()
+Integer m = getNumElementos()
+
+goal section
+min sum(getPeso(i) x[i], i in 0 .. n)
+
+constraints section
+sum(contieneElemento(i,j) x[i], i in 0 .. n) >= 1, j in 0 .. m
+
+bin
+x[i], i in 0 .. n

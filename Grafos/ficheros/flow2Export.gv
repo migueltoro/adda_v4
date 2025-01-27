@@ -1,0 +1,18 @@
+strict digraph G {
+  1 [ color="" label="A" ];
+  2 [ color="" label="B" ];
+  3 [ color="" label="C" ];
+  4 [ color="" label="D" ];
+  5 [ color="green" label="S" ];
+  6 [ color="cyan" label="T" ];
+  1 -> 3 [ style="solid" label="A22" ];
+  3 -> 1 [ style="solid" label="D34" ];
+  1 -> 2 [ style="solid" label="C56" ];
+  4 -> 2 [ style="solid" label="T67" ];
+  2 -> 3 [ style="solid" label="D9" ];
+  3 -> 4 [ style="solid" label="D7" ];
+  5 -> 1 [ style="solid" label="D10" ];
+  5 -> 3 [ style="solid" label="D5" ];
+  2 -> 6 [ style="solid" label="A23" ];
+  4 -> 6 [ style="solid" label="F56" ];
+}

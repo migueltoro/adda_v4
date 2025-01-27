@@ -1,0 +1,19 @@
+head section
+
+Integer n = 2
+
+goal section
+
+min  1
+
+constraints section
+
+x[i,j,k] = 1, i in 0 .. n, j in 0 .. n, k in 1 .. n+1
+
+
+bin
+
+x[i,j,v], i in 0 .. n, j in 0 .. n, v in 1 .. n+1
+
+
+

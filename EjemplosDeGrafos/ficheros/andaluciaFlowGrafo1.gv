@@ -1,0 +1,36 @@
+strict digraph G {
+  1 [ label="Sevilla" color="" style="filled" ];
+  2 [ label="Cadiz" color="green" style="filled" ];
+  3 [ label="Huelva" color="" style="filled" ];
+  4 [ label="Cordoba" color="" style="filled" ];
+  5 [ label="Malaga" color="" style="filled" ];
+  6 [ label="Antequera" color="" style="filled" ];
+  7 [ label="Almeria" color="cyan" style="filled" ];
+  8 [ label="Granada" color="" style="filled" ];
+  9 [ label="Jaen" color="" style="filled" ];
+  10 [ label="Algeciras" color="" style="filled" ];
+  1 -> 3 [ label="" ];
+  3 -> 1 [ label="" ];
+  1 -> 4 [ label="" ];
+  4 -> 1 [ label="" ];
+  2 -> 1 [ label="" ];
+  1 -> 6 [ label="" ];
+  6 -> 1 [ label="" ];
+  6 -> 8 [ label="" ];
+  8 -> 6 [ label="" ];
+  6 -> 5 [ label="" ];
+  5 -> 6 [ label="" ];
+  6 -> 4 [ label="" ];
+  4 -> 6 [ label="" ];
+  5 -> 7 [ label="" ];
+  4 -> 9 [ label="" ];
+  9 -> 4 [ label="" ];
+  4 -> 8 [ label="" ];
+  8 -> 4 [ label="" ];
+  8 -> 7 [ label="" ];
+  8 -> 9 [ label="" ];
+  9 -> 8 [ label="" ];
+  2 -> 10 [ label="" ];
+  10 -> 5 [ label="" ];
+  5 -> 10 [ label="" ];
+}

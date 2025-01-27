@@ -1,0 +1,13 @@
+Me puedes proporcionar una solución recursiva final, otra iterativa y otra funcional usando stream, 
+para el problema siguiente?
+
+public static String solucionRecursivaNoFinal(Integer a, Integer b) { // Definicion del enunciado
+		String r =  null;
+		if (a < 5 || b < 5) {
+			r = String.format("(%d)", a * b);
+		} else {
+			r = String.format("%d", a + b) + solucionRecursivaNoFinal(a/2, b-2);
+		}
+		return r;
+}
+

@@ -1,0 +1,16 @@
+Definimos un árbol binario en las clases us.lsi.tiposrecursivos.BinaryTree,
+us.lsi.tiposrecursivos.BEmpty, us.lsi.tiposrecursivos.BLeaf y us.lsi.tiposrecursivos.BTreee que deben ser reutilizadas
+e importadas.
+
+Para este algoritmo, queremos utilizar una "switch expression with record pattern matching" para soportar 
+cada uno de los diferentes tipos de árboles binarios (BEmpty, BLeaf, BTree) de esta manera:
+
+        return switch (tree) {
+            case BEmpty() -> ...;
+            case BLeaf(var label) -> ...;
+            case BTree(var label, var left, var right) -> ...;
+        };
+
+Implemente una función booleana que, dados un árbol binario de caracteres y
+una lista de caracteres, determine si existe un camino en el árbol de la raíz
+a una hoja que sea igual a la lista.

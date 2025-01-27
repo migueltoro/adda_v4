@@ -1,0 +1,22 @@
+head section
+
+Integer getNumeroAlumnos()
+Integer getNumeroGrupos()
+Integer afinidad(Integer i, Integer j)
+
+Integer n = getNumeroAlumnos()
+Integer m = getNumeroGrupos()
+
+goal section
+
+max  sum(afinidad(i, j) x[i, j], i in 0 .. n, j in 0 .. m)
+
+constraints section
+
+
+sum(x[i,j], i in 0 .. n | afinidad(i,j) > 0 ) = n/m, j in 0 .. m
+sum(x[i,j], j in 0 .. m ) = 1, i in 0 .. n
+
+bin 
+
+x[i, j], i in 0 .. n, j in 0 .. m

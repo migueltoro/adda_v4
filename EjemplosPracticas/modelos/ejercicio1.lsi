@@ -1,0 +1,19 @@
+head section
+
+Integer getNumTipos()
+Integer getNumVariedades()
+Double getBeneficio(Integer i)
+Integer getPorcentajeTipo(Integer i, Integer j)
+Integer getKgTipo(Integer j)
+
+Integer n = getNumVariedades()
+Integer m = getNumTipos()
+
+goal section
+max sum(getBeneficio(i) x[i], i in 0 .. n)
+
+constraints section
+sum(getPorcentajeTipo(i,j) x[i], i in 0 .. n) <= getKgTipo(j), j in 0 .. m
+
+int
+x[i], i in 0 .. n

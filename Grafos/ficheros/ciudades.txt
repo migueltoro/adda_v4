@@ -1,0 +1,13 @@
+Sevilla,1535379
+Cadiz,647241
+Huelva,230466
+Cordoba,363326
+Malaga,887415
+Antequera,41141
+Almeria,257207
+Granada,529678
+Jaen,217581
+Algeciras,263739
+Londres,1263739
+Paris,2263739
+Roma,1263739

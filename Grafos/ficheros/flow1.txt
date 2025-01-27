@@ -1,0 +1,13 @@
+#VERTEX#
+A,Source,0.,12.,5.,Cordoba
+B,Intermediate
+C,Intermediate,0.,4.,6.
+D,Intermediate,8.,8.,0.
+E,Sink,0.,inf,-1.
+#EDGE#
+A,C,0.,6.,0.,Algeciras
+A,B,0.,inf,0.
+B,D,4.,inf,3.7
+C,D,0.,inf,0.5
+C,E,0.,inf,0.
+D,E,0.,inf,0.

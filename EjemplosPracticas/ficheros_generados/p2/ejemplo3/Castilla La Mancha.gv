@@ -1,0 +1,13 @@
+strict graph G {
+  1 [ color="black" label="Toledo" ];
+  2 [ color="black" label="CiudadReal" ];
+  3 [ color="black" label="Albacete" ];
+  4 [ color="black" label="Cuenca" ];
+  5 [ color="black" label="Guadalajara" ];
+  1 -- 2 [ color="black" label="N-401" ];
+  1 -- 4 [ color="black" label="N-403" ];
+  2 -- 3 [ color="black" label="CM-4127" ];
+  2 -- 4 [ color="black" label="CM-4127" ];
+  3 -- 4 [ color="black" label="N-301" ];
+  4 -- 5 [ color="black" label="N-320" ];
+}

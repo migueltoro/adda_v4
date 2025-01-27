@@ -1,0 +1,15 @@
+strict graph G {
+  1 [ color="black" label="Sevilla" ];
+  2 [ color="black" label="Algeciras" ];
+  3 [ color="black" label="Cadiz" ];
+  4 [ color="black" label="Almeria" ];
+  5 [ color="black" label="Malaga" ];
+  6 [ color="black" label="Cordoba" ];
+  7 [ color="black" label="Granada" ];
+  8 [ color="black" label="Antequera" ];
+  9 [ color="black" label="Huelva" ];
+  10 [ color="black" label="Jaen" ];
+  8 -- 5 [ style="bold" label="A-45--51.523" ];
+  5 -- 4 [ style="bold" label="A-7--201.029" ];
+  1 -- 8 [ style="bold" label="A-92--159.947" ];
+}

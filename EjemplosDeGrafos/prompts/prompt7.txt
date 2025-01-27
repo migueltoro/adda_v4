@@ -1,0 +1,6 @@
+Asumimos que un grafo viene definido  por el sotware en el paquete org.jgrapht del módulo
+org.jgrapht.core. 
+
+Me puedes implementar una función que usando el software anterior y 
+tomando un grafo no dirigido g de tipo SimpleWeightedGraph<E,V> 
+devuelva camino mínimo y que va del vértice v1  otro v2?.

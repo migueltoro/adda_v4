@@ -1,0 +1,7 @@
+Asumimos que un grafo viene definido  por el sotware en el paquete org.jgrapht del módulo
+org.jgrapht.core. 
+
+Me puedes implementar una función que usando el software anterior y 
+tomando un grafo no dirigido g de tipo Graph<E,V>, y dos vértices v1, v2 de tipo V, 
+devuelva si existe un camino en el grafo que los una y si existe 
+la longitud en número de aristas del camino mínimo que los conecta.

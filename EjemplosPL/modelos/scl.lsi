@@ -1,0 +1,24 @@
+head section
+
+Integer getT1()
+Integer getT2()	
+
+Integer coincide(Integer i, Integer j)
+
+Integer T1= getT1()
+Integer T2= getT2()
+
+goal section
+
+max sum(x[i,j], i in 0 .. T1, j in 0 .. T2)
+
+constraints section
+x[i,j] <= coincide(i, j) ,i in 0 .. T1, j in 0 .. T2 
+sum(x[i,j], i in 0 .. T1) <= 1, j in 0 .. T2
+sum(x[i,j], j in 0 .. T2) <= 1, i in 0 .. T1
+
+x[i1,j1] + x[i2,j2] <=1, i1 in 0 .. T1, j1 in 0 .. T2, i2 in 0 .. T1, j2 in 0 .. T2 | i2 < i1 && j2 >j1  
+
+
+bin 
+x[i,j], i in 0 .. T1, j in 0 .. T2

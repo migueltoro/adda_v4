@@ -1,0 +1,3 @@
+Puedes implementar una función iterativa que calcule el valor de la 
+función	f(n) = a*f(n-1)+b*f(n-2), f(0)=0, f(1)=1 con complejidad O(log(n))?
+Asumimos que a, b, n son enteros pero el resultado es BigInteger.

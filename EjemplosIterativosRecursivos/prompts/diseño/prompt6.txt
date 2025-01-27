@@ -1,0 +1,2 @@
+Me puedes escribir una función iterativa que tome los parámetros a, de tipo entero, y n,  de tipo entero y 
+calcule al potencia de a elevado a n con complejidad log(n) en forma de BigInteger? y 

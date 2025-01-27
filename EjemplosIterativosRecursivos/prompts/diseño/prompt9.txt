@@ -1,0 +1,3 @@
+Dado una función  mónotona creciente  f(x) y un valor b, 
+diseñar una función que encuentre valor x0 que hace que f(x0) = b con un error menor que epsilon. 
+Asumimos que x, x0 y b  son números reales.

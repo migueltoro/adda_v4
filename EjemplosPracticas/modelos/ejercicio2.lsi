@@ -1,0 +1,24 @@
+head section
+Integer getNumCursos()
+Integer getNumTematicas()
+Integer getNumCentros()
+Double getCoste(Integer i)
+Integer imparteTematica(Integer i, Integer j)
+Integer esImpartidoEn(Integer i, Integer k)
+Integer getMaxCentros()
+
+Integer n = getNumCursos()
+Integer m = getNumTematicas()
+Integer c = getNumCentros()
+
+goal section
+min sum(getCoste(i) x[i], i in 0 .. n)
+
+constraints section
+sum(imparteTematica(i,j) x[i], i in 0 .. n) >= 1, j in 0 .. m
+esImpartidoEn(i,k) x[i] - y[k] <= 0, i in 0 .. n, k in 0 .. c
+sum(y[k], k in 0 .. c) <= getMaxCentros()
+
+bin
+x[i], i in 0 .. n
+y[k], k in 0 .. c

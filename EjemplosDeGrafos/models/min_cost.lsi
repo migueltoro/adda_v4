@@ -1,0 +1,26 @@
+head section
+
+Integer getN()
+Boolean containsEdge(Integer i, Integer j)
+Double edgeMax(Integer i, Integer j)
+Double edgeMin(Integer i, Integer j)
+Boolean isSource(Integer i)
+Boolean isSink(Integer i)
+Boolean isIntermediate(Integer i)
+Integer n = getN()
+
+
+goal section
+
+max sum(y[i,j], i in 0 .. n, j in 0 .. n | containsEdge(i,j)) + sum(x[i], i in 0 .. n)
+
+constraints section
+
+sum(y[j,i], j in 0 .. n | containsEdge(j,i)) - sum(y[i,j], j in 0 .. n | containsEdge(i,j)) = 0, i in 0 .. n | isIntermediate(i)
+sum(y[j,i], j in 0 .. n | containsEdge(j,i)) - x[i] = 0,  i in 0 .. n | isIntermediate(i) || isSink(i)
+sum(y[i,j], j in 0 .. n | containsEdge(i,j)) - x[i] = 0,  i in 0 .. n | isSource(i)
+
+bounds section
+
+y[i,j] <= edgeMax(i,j), i in 0 .. n, j in 0 .. n | containsEdge(i,j) && edgeHasMax(i,j)
+y[i,j] >= edgeMin(i,j), i in 0 .. n, j in 0 .. n | containsEdge(i,j) && edgeHasMin(i,j)

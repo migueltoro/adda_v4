@@ -1,0 +1,22 @@
+head section
+
+Integer n = 5
+
+goal section
+
+max  sum(getValor(i) x[i], i in 0 .. n) + y[] + 45
+
+constraints section
+
+
+
+bounds section
+
+x[i] <= getNMU(i), i in 0 .. n
+y[] <= 10
+
+int  
+
+x[i], i in 0 .. n 
+y[]
+

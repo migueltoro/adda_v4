@@ -1,0 +1,17 @@
+strict graph G {
+  1 [ color="red" ];
+  2 [ color="red" ];
+  3 [ color="blank" ];
+  4 [ color="blank" ];
+  5 [ color="red" ];
+  6 [ color="blank" ];
+  7 [ color="blank" ];
+  8 [ color="blank" ];
+  1 -- 2 [ color="green" ];
+  1 -- 3 [ color="blank" ];
+  1 -- 4 [ color="blank" ];
+  2 -- 5 [ color="green" ];
+  2 -- 6 [ color="blank" ];
+  5 -- 7 [ color="blank" ];
+  5 -- 8 [ color="blank" ];
+}

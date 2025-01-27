@@ -1,0 +1,22 @@
+Asumimos que tenemos un tablero de ajedrez de 8x8, y que las casillas estan etiquetadas (f,c) siendo
+f la fila y c la columna. La casilla (0,0) es la esquina superior izquierda y la casilla (7,7)
+la esquina inferior derecha. Suponiendo que tenemos un caballo en la casilla (0,0)
+que se puede mover por el tablero tal como se mueve un caballo en el ajedrez.
+
+Queremos saber si es posible que el caballo recorra todo el tablero sin pasar por
+ninguna casilla dos veces.
+
+Viendo las ideas anteriores como un grafo cuyos vértices son las posiciones del tablero,
+las aristas son los movimientos del caballo y las acciones son las alternativas que tenemos pra mover
+el cabaallo.
+
+Con estas ideas queremos implementar los interfaces us.lsi.graphs.virtual.VirtualGraph<V,E,A> y 
+us.lsi.graphs.virtual.SimpleEdgeAction<V,A> y el tipo adecuado para A. 
+Hay que implementar todos los metodos de estos interfaces.
+Puedes hacerlo?
+
+Dadas ls implementaciones anteriores queremos construir un un grafo virtual extendido usando 
+us.lsi.graphs.virtual.EGraph<V,E> y en particular el método virtual que toma solamente un vertice inicial
+construye un builder a partir del cual se puede construir un EGraph<V,E>.
+Puedes hacerlo?
+

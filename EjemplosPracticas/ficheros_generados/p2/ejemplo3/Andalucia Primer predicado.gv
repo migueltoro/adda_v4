@@ -1,0 +1,13 @@
+strict graph G {
+  1 [ label="Pueblito5" ];
+  2 [ label="Sevilla" ];
+  3 [ label="Pueblito3" ];
+  4 [ label="Pueblito2" ];
+  5 [ label="Algeciras" ];
+  6 [ label="Almeria" ];
+  7 [ label="Pueblito4" ];
+  8 [ label="Antequera" ];
+  9 [ label="Pueblito1" ];
+  10 [ label="Jaen" ];
+  2 -- 8 [ color="black" label="A-92" ];
+}

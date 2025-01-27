@@ -1,0 +1,14 @@
+Definimos un árbol binario en las clases us.lsi.tiposrecursivos.BinaryTree,
+us.lsi.tiposrecursivos.BEmpty, us.lsi.tiposrecursivos.BLeaf y us.lsi.tiposrecursivos.BTreee que deben ser reutilizadas
+e importadas.
+
+Para este algoritmo, queremos utilizar una "switch expression with record pattern matching" para soportar 
+cada uno de los diferentes tipos de árboles binarios (BEmpty, BLeaf, BTree) de esta manera:
+
+        return switch (tree) {
+            case BEmpty() -> ...;
+            case BLeaf(var label) -> ...;
+            case BTree(var label, var left, var right) -> ...;
+        };
+
+Me puedes diseñar una función size en Java 21 que calcule el número de etiquetas de un árbol binario?

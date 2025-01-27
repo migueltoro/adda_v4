@@ -1,0 +1,16 @@
+Definimos un árbol binario en las clases us.lsi.tiposrecursivos.BinaryTree,
+us.lsi.tiposrecursivos.BEmpty, us.lsi.tiposrecursivos.BLeaf y us.lsi.tiposrecursivos.BTreee que deben ser reutilizadas
+e importadas.
+
+Para este algoritmo, queremos utilizar una "switch expression with record pattern matching" para soportar 
+cada uno de los diferentes tipos de árboles binarios (BEmpty, BLeaf, BTree) de esta manera:
+
+        return switch (tree) {
+            case BEmpty() -> ...;
+            case BLeaf(var label) -> ...;
+            case BTree(var label, var left, var right) -> ...;
+        };
+
+Me puedes diseñar el método hight en Java 21 que calcule la altura de un árbol binario?
+
+Por definición asumimos que la altura de un árbol vacío es -1 y la altura de una hoja es 0.

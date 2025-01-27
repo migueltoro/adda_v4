@@ -1,0 +1,38 @@
+head section
+
+Integer getN()
+Integer n = getN()
+Double edgeCost(Integer i, Integer j)
+Boolean edgeHasMin(Integer i, Integer j)
+Double edgeMin(Integer i, Integer j)
+Boolean edgeHasMax(Integer i, Integer j)
+Double edgeMax(Integer i, Integer j)
+Boolean containsEdge(Integer i, Integer j)
+Double vertexCost(Integer i)
+Boolean vertexHasMin(Integer i)
+Double vertexMin(Integer i)
+Boolean vertexHasMax(Integer i)
+Double vertexMax(Integer i)
+Boolean vertexIsSource(Integer i)
+Boolean vertexIsSink(Integer i)
+Boolean vertexIsIntermediate(Integer i)
+
+goal section
+
+min sum(edgeCost(i,j) x[i,j], i in 0 .. n, j in 0 .. n | j != i && containsEdge(i,j)) +
+    sum(vertexCost(i) y[i], i in 0 .. n)
+
+constraints section
+
+sum(x[i,j], j in 0 .. n | j != i && containsEdge(i,j)) = y[i], i in 0 .. n | vertexIsSource(i) || vertexIsIntermediate(i)
+sum(x[j,i], j in 0 .. n | j != i && containsEdge(j,i)) = y[i], i in 0 .. n | vertexIsSink(i) || vertexIsIntermediate(i)
+
+
+bounds section
+
+y[i] <= vertexMax(i), i in 0 .. n | vertexHasMax(i)
+y[i] >= vertexMin(i), i in 0 .. n | vertexHasMin(i)
+x[i,j] <= edgeMax(i,j), i in 0 .. n, j in 0 .. n | i != j && containsEdge(i,j) && edgeHasMax(i,j)
+x[i,j] >= edgeMin(i,j), i in 0 .. n, j in 0 .. n | i != j && containsEdge(i,j) && edgeHasMin(i,j)
+
+

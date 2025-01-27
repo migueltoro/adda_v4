@@ -1,0 +1,2 @@
+Dado una lista ordenada y rotada k veces, diseñar un algoritmo Θ(log n) que encuentre el elemento mayor del vector, 
+suponiendo que no conocemos el valor de k.

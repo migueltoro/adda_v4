@@ -1,0 +1,2 @@
+Escribe una función que tome un iterable de tipo Integer y nos devuelva si es una secuencia aritmética y su razón.
+No usar listas intermedias.

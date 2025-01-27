@@ -1,0 +1,26 @@
+head section
+
+
+
+Integer getN()
+Integer getM()
+Integer volumenObjeto(Integer i)
+Integer volumenContenedor()
+Integer n = getN()
+Integer m = getM()
+
+
+goal section
+
+min  sum(y[j], j in 0 .. m)
+
+constraints section
+
+sum(volumenObjeto(i) x[i,j], i in 0 .. n) - volumenContenedor() y[j] <= 0, j in 0 .. m
+sum(x[i,j], j in 0 .. m) = 1, i in 0 .. n
+
+bin  
+
+x[i,j], i in 0 .. n, j in 0 .. m 
+y[j], j in 0 .. m 
+

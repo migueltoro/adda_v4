@@ -1,0 +1,8 @@
+Alumno_01: 1,2,4,5
+Alumno_02: 1,2,5,0
+Alumno_03: 0,5,2,3
+Alumno_04: 5,0,2,3
+Alumno_05: 2,3,0,5
+Alumno_06: 3,0,5,1
+Alumno_07: 1,5,0,2
+Alumno_08: 5,3,2,0

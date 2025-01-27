@@ -1,0 +1,3 @@
+Dada una lista de que representa los coeficientes de un polinomio de grado n de menor a mayor grado, 
+se pide que implementes una función que evalúe el polinomio en un punto x.
+Reutiliza el cálculo de las potencias de x.

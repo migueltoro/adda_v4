@@ -1,0 +1,25 @@
+head section
+
+Integer getN()
+Integer getM()
+Double alturaLibro(Integer i) 
+Double alturaEstante(Integer i)
+Double anchuraLibro(Integer i)
+Double anchuraEstante()
+Integer n = getN()
+Integer m = getM()
+
+goal section
+
+max sum(x[i,j], i in 0 .. n, j in 0 .. m)
+
+constraints section
+
+alturaLibro(i) x[i,j] <= alturaEstante(j), i in 0 .. n, j in 0 ..m
+sum(anchuraLibro(i) x[i,j], i in 0 .. n) <= anchuraEstante(), j in 0 .. m
+sum(x[i,j], j in 0 .. m) <= 1, i in 0 .. n
+
+bin
+
+x[i,j], i in 0 .. n, j in 0 ..m
+

@@ -1,0 +1,18 @@
+﻿Investigadores,Capacidad,Especialidad,,,,,,,
+INV1,10,E0,,,,,,,
+INV2,5,E1,,,,,Dias De Especialidad Necesarios,,
+INV3,8,E2,,,,,T01,E0,2
+INV4,2,E0,,,,,T01,E1,0
+INV5,5,E3,,,,,T01,E2,5
+, , , ,,,,T01,E3,0
+Trabajadores,Calidad, , ,,,,T02,E0,8
+T01,7,,,,,,T02,E1,4
+T02,9,,,,,,T02,E2,3
+T03,5,,,,,,T02,E3,0
+,,,,,,,T03,E0,2
+,,,,,,,T03,E1,0
+Especialidades,,,,,,,T03,E2,0
+E0,,,,,,,T03,E3,7
+E1,,,,,,,,,
+E2,,,,,,,,,
+E3,,,,,,,,,

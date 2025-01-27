@@ -1,0 +1,50 @@
+</BODY>
+</HTML>
+
+<HTML>
+<BODY>
+
+<p> Implementaciones de distintos tipos de cromosomas.</p>
+
+<p> Las tipos de cromosomas definidos definidos son: </p>
+
+<ul>
+<li> El tipo {@link us.lsi.ag.agchromosomes.Chromosome Chromosome} representa un cromomosoma en general.
+<li> La clase {@link us.lsi.ag.agchromosomes.BinaryChromosome BinaryChromosome} representa un cromosoma cuyo valor decodificado es una lista 
+de enteros del tamaño especificado en el problema. 
+<li> El tipo {@link us.lsi.ag.agchromosomes.SeqNormalChromosome SeqNormalChromosome} representa un cromomosoma adecuado para 
+resolver problemas cuya solución es un Multiset o una lista, posiblemente con elementos repetidos, formados con elementos de un conjunto dado  
+<li> El tipo {@link us.lsi.ag.agchromosomes.DoubleChromosome DoubleChromosome} representa un cromomosoma 
+cuyo valor decodificado es un lista de número reales
+</ul> 
+
+<p> Implementaciones de distintos tipos de cromosomas.</p>
+
+<p> Las clases usadas en el paquete son: </p>
+
+<ul>
+<li> La clase {@link us.lsi.ag.agchromosomes.BinaryChromosome BinaryChromosome} implementa un cromosoma binario. 
+Es decir uno cuya valor decodificado es una lista de ceros y unos. La implementación es una adaptación de la clase de Apache
+<a href="http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math3/genetics/BinaryChromosome.html" target="_blank"> BinaryChromosome</a>
+<li> La clase {@link us.lsi.ag.agchromosomes.PermutationSubListChromosome PermutationSubListChromosome} implementa el tipo {@link us.lsi.ag.SeqNormalChromosome SeqNormalChromosome}. 
+El valor decodificado de este cromosoma es un subconjunto de la secuencia normal definida en el problema.
+La implementación reutiliza la clase de Apache
+<a href="http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math3/genetics/BinaryChromosome.html" target="_blank"> BinaryChromosome</a>
+<li> La clase {@link us.lsi.ag.agchromosomes.RangeChromosome RangeChromosome} implementa el tipo {@link us.lsi.ag.ValuesInRangeChromosome ValuesInRangeChromosome}. 
+El valor decodificado de este cromosoma está formada por una lista de  tamaño <i> n </i> cuyos elementos para cada <i> i </i> están en el rango
+rango 0..m(i), siendo m(i) la multiplicidad máxima para i definida en el problema.
+<li> La clase {@link us.lsi.ag.agchromosomes.PermutationChromosome PermutationChromosome} implementa el tipo {@link us.lsi.ag.SeqNormalChromosome SeqNormalChromosome}.
+El valor decodificado de este cromosoma es una permutación de la secuencia normal definida en el problema.
+La implementación reutiliza mediante herencia la clase de Apache <a href="http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math3/genetics/RandomKey.html" target="_blank"> RandomKey</a>
+<li> La clase {@link us.lsi.ag.agchromosomes.PermutationSubListChromosome PermutationSubListChromosome} implementa el tipo {@link us.lsi.ag.SeqNormalChromosome SeqNormalChromosome}.
+El valor decodificado de este cromosoma es un subconjunto de una permutación de la secuencia normal definida en el problema.
+La implementación reutiliza mediante composición las clases de Apache <a href="http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math3/genetics/RandomKey.html" target="_blank"> RandomKey</a> y
+<a href="http://commons.apache.org/proper/commons-math/apidocs/org/apache/commons/math3/genetics/BinaryChromosome.html"> BinaryChromosome</a>
+<li> La clase {@link us.lsi.ag.agchromosomes.ExpressionChromosome ExpressionChromosome} implementa el tipo {@link us.lsi.ag.agchromosomes.ExpressionChromosome IExpressionChromosome}.
+La implementación sigue las ideas de <a href="https://en.wikipedia.org/wiki/Gene_expression_programming" target="_blank"> Gene expression programming</a>
+<li> La clase {@link us.lsi.ag.agchromosomes.ChromosomeFactory ChromosomeFactory} implementa una factoría de cromosomas de los tipos anteriores
+</ul>
+
+
+</BODY>
+</HTML>

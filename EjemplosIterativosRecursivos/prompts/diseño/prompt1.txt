@@ -1,0 +1,4 @@
+Me puede diseñar una función que fusione dos ficheros ordenados f1, f2 en otro ordenado f3 con orden de complejidad O(n)?
+La función tomará como argumentos los nombres de los ficheros f1, f2, f3, 
+una función que comvierta una línea de un fichero en un valor de tipo E y uun comparator sobre E.
+No queremos usar listas intermedias.
